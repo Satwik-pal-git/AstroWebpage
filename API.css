@@ -1,0 +1,116 @@
+/* css for API.html */
+body {
+  height: 100vh ;
+  font-family: "Special Elite", cursive;
+  
+  /* background: linear-gradient(135deg, #0ff0b3, #036ed9); */
+  /* background-image: radial-gradient(
+      circle at 85% 1%,
+      hsla(190, 0%, 93%, 0.05) 0%,
+      hsla(190, 0%, 93%, 0.05) 96%,
+      transparent 96%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 14% 15%,
+      hsla(190, 0%, 93%, 0.05) 0%,
+      hsla(190, 0%, 93%, 0.05) 1%,
+      transparent 1%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 60% 90%,
+      hsla(190, 0%, 93%, 0.05) 0%,
+      hsla(190, 0%, 93%, 0.05) 20%,
+      transparent 20%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 79% 7%,
+      hsla(190, 0%, 93%, 0.05) 0%,
+      hsla(190, 0%, 93%, 0.05) 78%,
+      transparent 78%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 55% 65%,
+      hsla(190, 0%, 93%, 0.05) 0%,
+      hsla(190, 0%, 93%, 0.05) 52%,
+      transparent 52%,
+      transparent 100%
+    ),
+    linear-gradient(135deg, rgb(37, 56, 222), rgb(96, 189, 244)); */
+
+    background-image: url("./trianglify-lowres.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    size: 90% 90%;
+    
+}
+
+.center_div {
+    /* background: linear-gradient(135deg, #0ff0b3, #036ed9);   */
+  border: 2px black solid;
+  border-radius: 10px;
+  width: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 2px 30px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+input {
+  outline: none;
+  background-color: #5d646b4b;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Special Elite", cursive;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 2vw;
+}
+/* div .input {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+} */
+.input {
+  margin: 2vw;
+  font-weight: 600;
+  display: flex;
+  font-size: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.btn-grad {
+  background: linear-gradient(688deg, #0ff0b3, #036ed9);
+}
+.btn-grad {
+  margin: 10px;
+  padding: 10px 25px;
+  font-size: 20px;
+  font-family: "Special Elite", cursive;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  outline: none !important;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}

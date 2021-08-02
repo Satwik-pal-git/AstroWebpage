@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="API.css">
+    <title>API</title>
+</head>
+<body>
+    <div class="center_div">
+        <h2>What does your name say about your personality ??</h2>
+        <div class="input">
+            <label for="Name">Enter your name</label>
+            <input type="text" name="name" class="name_">
+        </div>
+        <div class="img">
+            <img src="https://www.youngisthan.in/wp-content/uploads/2017/12/Vedic-Astrology-1280x720.jpg" class="avtar">
+        </div>
+        <button class="btn-grad">Click Me</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('button').click(function(){
+                const name=$('.name_').val();
+                $('.avtar').attr('src',`https://joeschmoe.io/api/v1/${name}`);
+            });
+        });
+    </script>
+
+</body>
+</html>
